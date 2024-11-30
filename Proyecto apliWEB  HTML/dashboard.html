@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <title>Centro de Visualización de Exámenes Médicos</title> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script> <!-- Incluir jsPDF -->
+</head> 
+<body> 
+<header> 
+    <h1>Bienvenidos al Centro de Visualización de Exámenes Médicos</h1> 
+    <img src="img/logo.png" alt="Logo" class="logo"> 
+</header> 
+
+<main> 
+    <!-- Contenedor para la información del examen -->
+    <div class='exam-info'>
+        <h2 style="color: black;">Información del Examen: Radiografía de Rodilla</h2>
+        <p><strong>Sede:</strong> Calle 49</p>
+        <p><strong>Tipo de Examen:</strong> Radiografía</p>
+
+        <!-- Iconos para descargar PDF y ver imagen -->
+        <div class='icons'>
+            <!-- Icono para descargar PDF -->
+            <a href='reporte_medico.pdf' download title='Descargar Reporte Médico'>
+                <img src="img/pdf-icon.png" alt="Descargar PDF" class="icon">
+                Descargar Reporte Médico
+            </a>
+
+            <!-- Icono para ver imagen -->
+            <a href='radiografia.jpg' target='_blank' title='Ver Radiografía'>
+                <img src="img/image-icon.png" alt="Ver Radiografía" class="icon">
+                Ver Radiografía
+            </a>
+        </div>
+
+        <!-- Mostrar la imagen de la radiografía -->
+        <h3>Vista Previa de la Radiografía:</h3>
+        <img src="radiografia.jpg" alt="Radiografía de Rodilla" width="400">
+    </div>
+</main>
+
+<footer> 
+    <p>&copy; 2024 Sistema de Gestión Médica</p> 
+</footer>
+
+<script src='script.js'></script><!-- Enlazando JavaScript -->
+</body>
+</html>

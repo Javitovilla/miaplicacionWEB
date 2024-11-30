@@ -1,0 +1,151 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #D1E8E4; /* Color azul pastel claro para el encabezado */
+    color: black; /* Color del texto en el encabezado */
+    padding: 20px 0; /* Espaciado superior e inferior */
+    text-align: center; /* Centrar texto */
+}
+
+/* Fondo azul pastel más claro para todo el cuerpo */
+body {
+    background-color: #D1E8E4; /* Cambiado a un azul pastel más claro */
+}
+
+/* Logo centrado y tamaño igual al registro */
+.logo {
+    width: 400px; /* Tamaño del logo igual al del registro */
+}
+
+/* Navegación */
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    padding: 0; /* Sin padding */
+}
+
+nav ul li {
+    display: inline; /* Elementos en línea */
+    margin-right: 20px; /* Espacio entre elementos */
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center; /* Centrar texto en el pie de página */
+    padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+/* Estilo del formulario en el registro */
+form {
+    margin-top: 20px; /* Margen superior para el formulario */
+    max-width: 400px; /* Ancho máximo del formulario */
+    margin-left: auto; /* Centrar a la izquierda */
+    margin-right: auto; /* Centrar a la derecha */
+}
+
+/* Agrupar etiquetas y campos del formulario */
+.form-group {
+    margin-bottom: 15px; /* Espacio entre grupos de formulario */
+}
+
+form label {
+    display: block; /* Cada etiqueta ocupa una línea completa */
+}
+
+form input,
+form select {
+    width: calc(100% - 20px); /* Ancho completo menos padding (ajustar según sea necesario) */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+}
+
+/* Estilo del botón en el registro */
+button {
+   background-color: #4CAF50; /* Color verde para el botón */
+   color: white; /* Texto blanco en el botón */
+   border: none; /* Sin borde */
+   padding: 10px 15px; /* Espaciado interno del botón */
+   cursor: pointer; /* Cambiar cursor al pasar sobre el botón */
+   border-radius: 5px; /* Bordes redondeados en el botón */
+   transition: background-color 0.3s ease; /* Transición suave al cambiar color de fondo */
+   display: block; /* Hacer que el botón sea un bloque para centrarlo fácilmente */
+   margin-top: 30px; /* Margen superior para separar del formulario y centrarlo mejor*/
+   margin-left: auto;
+   margin-right: auto;
+}
+
+button:hover {
+   background-color: #45a049; /* Color más oscuro al pasar el mouse sobre el botón */
+}
+
+/* Estilo del encabezado para el dashboard (Centro de Visualización)*/
+header h1 {
+   background-color: #B2E0B2; /* Color verde pastel claro para el encabezado en dashboard*/
+   color: black;
+}
+
+/* Estilo de la información del examen en dashboard */
+.exam-info {
+   margin-top: 20px;
+   padding: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   background-color: white; /* Fondo blanco para la información del examen */
+   text-align: center; /* Centrar contenido dentro del div */
+   max-width: 400px; /* Ancho máximo igual a la vista previa */
+   margin-left: auto; /* Centrar a la izquierda */
+   margin-right: auto; /* Centrar a la derecha */
+}
+
+/* Estilo de los iconos en dashboard */
+.icons {
+   margin-top: 20px; /* Espaciado superior para los iconos */
+}
+
+.icons a {
+   display: inline-block;
+   margin-right: 15px;
+   text-decoration: none; /* Sin subrayado en los enlaces */
+   color: black; /* Color negro para el texto de los enlaces */
+}
+
+/* Estilo para los iconos en blanco y negro (ajustar tamaño)*/
+.icon {
+   width: 50px; /* Ajusta el tamaño del icono según sea necesario (mediano) */
+   height: auto; /* Mantener proporciones del icono */
+   vertical-align: middle; /* Alinear verticalmente con el texto */
+}
+
+/* Media Queries para diseño responsivo */
+
+/* Móviles y tabletas pequeñas (menos de 768px)*/
+@media (max-width: 768px) {
+    
+     .logo {
+         width: 80%; /* Logo ocupa el 80% del ancho en móviles y tabletas pequeñas*/
+     }
+
+     .exam-info {
+         max-width: 90%; /* Ancho máximo en móviles más estrecho*/
+     }
+
+     .icon {
+         width: 40px; /* Tamaño más pequeño para iconos en móviles*/
+     }
+}
+
+/* Tabletas grandes y pantallas más grandes (768px o más)*/
+@media (min-width: 769px) {
+
+     .logo {
+         width: 400px; /* Tamaño original del logo en pantallas grandes*/
+     }
+
+     .exam-info {
+         max-width: 400px; /* Ancho máximo del contenedor en pantallas grandes*/
+     }
+}
